@@ -6,6 +6,9 @@
       v-model:collapsed="state.collapsed"
       v-model:selectedKeys="state.selectedKeys"
   >
+    <template #headerRender>
+      <layout-header v-model:collapsed="state.collapsed" />
+    </template>
     <router-view />
   </pro-layout>
 </template>
@@ -14,6 +17,7 @@
 import { reactive } from "vue"
 import { useRouter } from "vue-router";
 import { getMenuData, clearMenuItem } from "@ant-design-vue/pro-layout"
+import LayoutHeader from "./components/LayoutHeader.vue"
 
 const locale = (i18n: string) => i18n;
 const router = useRouter();

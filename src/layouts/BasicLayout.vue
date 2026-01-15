@@ -5,21 +5,16 @@
     <AppSider v-model:collapsed="collapsed" />
 
     <a-layout>
-      <a-layout-header style="background: #fff; padding: 0">
-        <menu-unfold-outlined
-            v-if="collapsed"
-            class="trigger"
-            @click="() => (collapsed = !collapsed)"
-        />
-        <menu-fold-outlined v-else class="trigger" @click="() => (collapsed = !collapsed)" />
-
-<!--        <a-avatar style="background-color: #87d068">-->
-<!--          <template #icon>-->
-<!--            <UserOutlined />-->
-<!--          </template>-->
-<!--        </a-avatar>-->
+      <a-layout-header class="layout-header-custom">
+        <div class="header-left">
+          <menu-unfold-outlined
+              v-if="collapsed"
+              class="trigger"
+              @click="() => (collapsed = !collapsed)"
+          />
+          <menu-fold-outlined v-else class="trigger" @click="() => (collapsed = !collapsed)" />
+        </div>
         <RightHeader />
-<!--        <RightContent theme="dark" top-menu="'topmenu'"/>-->
       </a-layout-header>
 
       <a-breadcrumb>
@@ -62,6 +57,21 @@ const collapsed = ref<boolean>(false);
 
 <style scoped>
 
+.layout-header-custom {
+  background: #fff;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 .site-layout .site-layout-background {
   background: #fff;
 }
@@ -74,6 +84,10 @@ const collapsed = ref<boolean>(false);
   padding: 0 24px;
   cursor: pointer;
   transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
 }
 
 /* Breadcrumb container */
