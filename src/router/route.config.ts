@@ -12,6 +12,26 @@ export const RouteView = defineComponent({
 });
 
 export const asyncRouterMap = [
+    // Auth Routes (before main layout)
+    {
+        path: '/login',
+        name: 'login',
+        component: () => import('@/views/auth/Login.vue'),
+        meta: { title: 'login', requiresAuth: false }
+    },
+    {
+        path: '/forgot-password',
+        name: 'forgotPassword',
+        component: () => import('@/views/auth/ForgotPassword.vue'),
+        meta: { title: 'forgotPassword', requiresAuth: false }
+    },
+    {
+        path: '/signup',
+        name: 'signup',
+        component: () => import('@/views/auth/Login.vue'), // Reuse Login page for now
+        meta: { title: 'signup', requiresAuth: false }
+    },
+    // Main Layout Routes
     {
         path: '/',
         name: 'index',

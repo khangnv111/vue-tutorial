@@ -74,6 +74,8 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+import { message } from 'ant-design-vue';
 import {
   UserOutlined,
   SettingOutlined,
@@ -83,12 +85,24 @@ import {
 } from '@ant-design/icons-vue';
 import type { MenuProps } from 'ant-design-vue';
 
+const router = useRouter();
 const currentLanguage = ref<string>('en-US');
 
 const onUserMenuClick: MenuProps['onClick'] = ({ key }) => {
   console.log(`Click on user menu item ${key}`);
   if (key === 'logout') {
-    console.log('Logout');
+    // Remove auth token
+    localStorage.removeItem('authToken');
+    localStorage.removeItem('rememberMe');
+    message.success('Đã đăng xuất');
+    // Redirect to login
+    router.push('/login');
+  } else if (key === 'profile') {
+    // Navigate to profile page
+    console.log('Navigate to profile');
+  } else if (key === 'settings') {
+    // Navigate to settings page
+    console.log('Navigate to settings');
   }
 };
 
