@@ -40,6 +40,12 @@ export default {
     'menu.account.settings': 'Account Settings',
     'menu.account.trigger': 'Trigger Error',
     'menu.account.logout': 'Logout',
+    // Post Management
+    'menu.post': 'Bài viết',
+    'menu.post.list': 'Danh sách bài viết',
+    'menu.post.create': 'Thêm bài viết',
+    'menu.post.detail': 'Chi tiết bài viết',
+    'menu.post.edit': 'Sửa bài viết',
     // App
     'app.name': 'Ant Design Vue 3 Pro',
     'app.home': 'Home',
@@ -49,7 +55,63 @@ export default {
     'common.error': 'Error',
     'common.ok': 'OK',
     'common.cancel': 'Cancel',
-    'common.back': 'Back'
+    'common.back': 'Back',
+    // Post Management Labels
+    'post.title': 'Tiêu đề',
+    'post.description': 'Mô tả',
+    'post.content': 'Nội dung',
+    'post.thumbnail': 'Hình ảnh đại diện',
+    'post.category': 'Danh mục',
+    'post.status': 'Trạng thái',
+    'post.publishTime': 'Thời gian xuất bản',
+    'post.createdAt': 'Ngày tạo',
+    'post.updatedAt': 'Ngày cập nhật',
+    'post.publishedAt': 'Ngày xuất bản',
+    'post.visibility': 'Chế độ công khai',
+    // Status labels
+    'post.status.draft': 'Nháp',
+    'post.status.published': 'Đã xuất bản',
+    'post.status.archived': 'Đã lưu trữ',
+    // Visibility labels
+    'post.visibility.public': 'Công khai',
+    'post.visibility.private': 'Riêng tư',
+    // Post Actions
+    'post.action.create': 'Thêm bài viết',
+    'post.action.edit': 'Sửa',
+    'post.action.delete': 'Xóa',
+    'post.action.detail': 'Xem chi tiết',
+    'post.action.publish': 'Xuất bản',
+    'post.action.save': 'Lưu',
+    'post.action.saveDraft': 'Lưu nháp',
+    'post.action.bulkDelete': 'Xóa hàng loạt',
+    'post.action.cancel': 'Hủy',
+    'post.action.search': 'Tìm kiếm',
+    'post.action.reset': 'Đặt lại',
+    'post.action.new': 'Thêm bài viết',
+    // Post Messages
+    'post.message.deleteConfirm': 'Bạn có chắc chắn muốn xóa bài viết này không?',
+    'post.message.bulkDeleteConfirm': 'Bạn có chắc chắn muốn xóa {count} bài viết được chọn không?',
+    'post.message.unsavedChanges': 'Bạn có thay đổi chưa lưu. Bạn có muốn bỏ qua chúng không?',
+    'post.message.deleteSuccess': 'Xóa bài viết thành công',
+    'post.message.createSuccess': 'Tạo bài viết thành công',
+    'post.message.updateSuccess': 'Cập nhật bài viết thành công',
+    // Post Validation
+    'post.validation.titleRequired': 'Tiêu đề là bắt buộc',
+    'post.validation.descriptionRequired': 'Mô tả là bắt buộc',
+    'post.validation.contentRequired': 'Nội dung là bắt buộc',
+    'post.validation.categoryRequired': 'Chọn ít nhất một danh mục',
+    'post.validation.titleMinLength': 'Tiêu đề phải có ít nhất 3 ký tự',
+    'post.validation.titleMaxLength': 'Tiêu đề không được vượt quá 200 ký tự',
+    'post.validation.descriptionMinLength': 'Mô tả phải có ít nhất 10 ký tự',
+    'post.validation.descriptionMaxLength': 'Mô tả không được vượt quá 500 ký tự',
+    'post.validation.contentMinLength': 'Nội dung phải có ít nhất 100 ký tự',
+    // Post Table headers
+    'post.table.title': 'Tiêu đề',
+    'post.table.status': 'Trạng thái',
+    'post.table.createdAt': 'Ngày tạo',
+    'post.table.updatedAt': 'Ngày cập nhật',
+    'post.table.publishedAt': 'Ngày xuất bản',
+    'post.table.action': 'Thao tác'
     // Form
     ,...form
 }

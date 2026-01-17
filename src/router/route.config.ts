@@ -115,6 +115,38 @@ export const asyncRouterMap = [
                     },
                 ],
             },
+            // Post Management
+            {
+                path: '/post',
+                name: 'post',
+                meta: { title: 'menu.post', icon: 'file-text' },
+                children: [
+                    {
+                        path: '/post/list',
+                        name: 'PostList',
+                        component: () => import('@/views/post/List.vue'),
+                        meta: { title: 'menu.post.list' }
+                    },
+                    {
+                        path: '/post/create',
+                        name: 'PostCreate',
+                        component: () => import('@/views/post/CreateEdit.vue'),
+                        meta: { title: 'menu.post.create' }
+                    },
+                    {
+                        path: '/post/:id/detail',
+                        name: 'PostDetail',
+                        component: () => import('@/views/post/Detail.vue'),
+                        meta: { title: 'menu.post.detail' }
+                    },
+                    {
+                        path: '/post/:id/edit',
+                        name: 'PostEdit',
+                        component: () => import('@/views/post/CreateEdit.vue'),
+                        meta: { title: 'menu.post.edit' }
+                    }
+                ]
+            },
         ]
     }
 ]

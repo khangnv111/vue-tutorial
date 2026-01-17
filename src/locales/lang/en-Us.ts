@@ -39,6 +39,12 @@ export default {
     'menu.account.settings': 'Account Settings',
     'menu.account.trigger': 'Trigger Error',
     'menu.account.logout': 'Logout',
+    // Post Management
+    'menu.post': 'Posts',
+    'menu.post.list': 'Post List',
+    'menu.post.create': 'Create Post',
+    'menu.post.detail': 'Post Detail',
+    'menu.post.edit': 'Edit Post',
     // App
     'app.name': 'Ant Design Vue 3 Pro',
     'app.home': 'Home',
@@ -48,7 +54,63 @@ export default {
     'common.error': 'Error',
     'common.ok': 'OK',
     'common.cancel': 'Cancel',
-    'common.back': 'Back'
+    'common.back': 'Back',
+    // Post Management Labels
+    'post.title': 'Title',
+    'post.description': 'Description',
+    'post.content': 'Content',
+    'post.thumbnail': 'Thumbnail Image',
+    'post.category': 'Categories',
+    'post.status': 'Status',
+    'post.publishTime': 'Publish Time',
+    'post.createdAt': 'Created Date',
+    'post.updatedAt': 'Updated Date',
+    'post.publishedAt': 'Published Date',
+    'post.visibility': 'Visibility',
+    // Status labels
+    'post.status.draft': 'Draft',
+    'post.status.published': 'Published',
+    'post.status.archived': 'Archived',
+    // Visibility labels
+    'post.visibility.public': 'Public',
+    'post.visibility.private': 'Private',
+    // Post Actions
+    'post.action.create': 'Create Post',
+    'post.action.edit': 'Edit',
+    'post.action.delete': 'Delete',
+    'post.action.detail': 'View Detail',
+    'post.action.publish': 'Publish',
+    'post.action.save': 'Save',
+    'post.action.saveDraft': 'Save as Draft',
+    'post.action.bulkDelete': 'Bulk Delete',
+    'post.action.cancel': 'Cancel',
+    'post.action.search': 'Search',
+    'post.action.reset': 'Reset',
+    'post.action.new': 'New Post',
+    // Post Messages
+    'post.message.deleteConfirm': 'Are you sure you want to delete this post?',
+    'post.message.bulkDeleteConfirm': 'Are you sure you want to delete {count} selected posts?',
+    'post.message.unsavedChanges': 'You have unsaved changes. Do you want to discard them?',
+    'post.message.deleteSuccess': 'Post deleted successfully',
+    'post.message.createSuccess': 'Post created successfully',
+    'post.message.updateSuccess': 'Post updated successfully',
+    // Post Validation
+    'post.validation.titleRequired': 'Title is required',
+    'post.validation.descriptionRequired': 'Description is required',
+    'post.validation.contentRequired': 'Content is required',
+    'post.validation.categoryRequired': 'Select at least one category',
+    'post.validation.titleMinLength': 'Title must be at least 3 characters',
+    'post.validation.titleMaxLength': 'Title must not exceed 200 characters',
+    'post.validation.descriptionMinLength': 'Description must be at least 10 characters',
+    'post.validation.descriptionMaxLength': 'Description must not exceed 500 characters',
+    'post.validation.contentMinLength': 'Content must be at least 100 characters',
+    // Post Table headers
+    'post.table.title': 'Title',
+    'post.table.status': 'Status',
+    'post.table.createdAt': 'Created',
+    'post.table.updatedAt': 'Updated',
+    'post.table.publishedAt': 'Published',
+    'post.table.action': 'Action'
     // Form
     ,...form
 }
